@@ -17,14 +17,7 @@ function calc() {
 }
 
 function retirar() {
-  const palavraCompleta = telaResultado.value;
-  const ultimaLetra = palavraCompleta.substring(
-    0,
-    telaResultado.value.length - 1
-  );
-  console.log(ultimaLetra);
-
-  telaResultado.value = ultimaLetra;
+  telaResultado.value = telaResultado.value.slice(0, -1)
 }
 
 buttonDarkMode.addEventListener("click", function () {
